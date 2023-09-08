@@ -6,7 +6,10 @@
 			"value": "adf-uat-sg"
 		},
 		"AzureBlobStorageuat_connectionString": {
-			"value": ""
+			"value": "DefaultEndpointsProtocol=https;AccountName=storage9415;EndpointSuffix=core.windows.net;"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://kv-uat-sg.vault.azure.net/"
 		},
 		"containerUri": {
 			"value": ""
