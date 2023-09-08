@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "adf-uat-sg"
 		},
+		"AzureBlobStorageuat_connectionString": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},

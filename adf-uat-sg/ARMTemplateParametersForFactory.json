@@ -4,6 +4,9 @@
 	"parameters": {
 		"factoryName": {
 			"value": "adf-uat-sg"
+		},
+		"AzureBlobStorageuat_connectionString": {
+			"value": ""
 		}
 	}
 }
