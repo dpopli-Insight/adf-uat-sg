@@ -1,0 +1,29 @@
+name: Deployment
+on: [workflow_dispatch,push]
+permissions:
+    id-token: write
+    contents: read
+jobs:
+  Prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: adf_publish
+      - run: |
+          pwd
+          ls
+      - name: Login via Az module
+        uses: azure/login@v1
+        with:
+          client-id: abc27c10-d39b-46e6-979b-cc2036067b63
+          tenant-id: 31be5552-b875-4568-bbde-628d39493db2
+          subscription-id: 228a3927-1022-493e-9036-e740a2abcce9
+          enable-AzPSSession: true
+      - name: Run ARM deploy
+        uses: azure/arm-deploy@v1
+        with:
+          resourceGroupName: adf
+          template: adf-uat-sg/ARMTemplateForFactory.json
+          parameters: 'factoryName=adf-prd-sg'
+          
