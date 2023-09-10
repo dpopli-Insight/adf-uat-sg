@@ -17,6 +17,11 @@
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorageuat'",
 			"defaultValue": "DefaultEndpointsProtocol=https;AccountName=storage9415;EndpointSuffix=core.windows.net;"
 		},
+		"BlobStorage_CS_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'BlobStorage_CS'",
+			"defaultValue": "DefaultEndpointsProtocol=https;AccountName=storage9415;"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://kv-uat-sg.vault.azure.net/"
@@ -53,6 +58,9 @@
 					},
 					"AzureBlobStorageuat_connectionString": {
 						"value": "[parameters('AzureBlobStorageuat_connectionString')]"
+					},
+					"BlobStorage_CS_connectionString": {
+						"value": "[parameters('BlobStorage_CS_connectionString')]"
 					},
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
