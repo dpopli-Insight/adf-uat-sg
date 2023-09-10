@@ -1,5 +1,8 @@
 name: Deployment
-on: [workflow_dispatch,push]
+on: 
+    push:
+        branches:
+            - main
 permissions:
     id-token: write
     contents: read
