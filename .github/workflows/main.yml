@@ -25,5 +25,5 @@ jobs:
         with:
           resourceGroupName: devansh
           template: adf-uat-sg/ARMTemplateForFactory.json
-          parameters: 'factoryName=adf-prd-sg'
+          parameters: 'factoryName=adf-prd-sg BlobStorage_CS_connectionString="DefaultEndpointsProtocol=https;AccountName=storage9416;EndpointSuffix=core.windows.net;"'
           
