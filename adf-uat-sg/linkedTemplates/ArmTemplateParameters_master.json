@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "adf-uat-sg"
 		},
+		"AzureBlobStorage_uat_test_connectionString": {
+			"value": "DefaultEndpointsProtocol=https;AccountName=storage9415;"
+		},
 		"AzureBlobStorageuat_connectionString": {
 			"value": "DefaultEndpointsProtocol=https;AccountName=storage9415;EndpointSuffix=core.windows.net;"
 		},

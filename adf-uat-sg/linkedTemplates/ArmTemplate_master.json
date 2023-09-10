@@ -7,6 +7,11 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-uat-sg"
 		},
+		"AzureBlobStorage_uat_test_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage_uat_test'",
+			"defaultValue": "DefaultEndpointsProtocol=https;AccountName=storage9415;"
+		},
 		"AzureBlobStorageuat_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorageuat'",
@@ -42,6 +47,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"AzureBlobStorage_uat_test_connectionString": {
+						"value": "[parameters('AzureBlobStorage_uat_test_connectionString')]"
 					},
 					"AzureBlobStorageuat_connectionString": {
 						"value": "[parameters('AzureBlobStorageuat_connectionString')]"
