@@ -2,7 +2,7 @@ name: Deployment
 on: 
     push:
         branches:
-            - adf_publish
+            - "adf_publish"
 permissions:
     id-token: write
     contents: read
