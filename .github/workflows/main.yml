@@ -25,5 +25,5 @@ jobs:
         with:
           resourceGroupName: devansh
           template: adf-uat-sg/ARMTemplateForFactory.json
-          parameters: 'factoryName=adf-prd-sg BlobStorage_CS_connectionString="DefaultEndpointsProtocol=https;AccountName=storage9416;EndpointSuffix=core.windows.net;"'
+          parameters: 'factoryName=adf-prd-sg BlobStorage_CS_connectionString="DefaultEndpointsProtocol=https;AccountName=storage9416;EndpointSuffix=core.windows.net;" AzureKeyVault1_properties_typeProperties_baseUrl="https://kv-prd-sg.vault.azure.net/"'
           
