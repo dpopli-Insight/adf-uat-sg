@@ -171,6 +171,14 @@
 					"storage_ac_name": {
 						"type": "String",
 						"defaultValue": "storageaccount9415"
+					},
+					"secret": {
+						"type": "String",
+						"defaultValue": "adhjbqd"
+					},
+					"uat_secret": {
+						"type": "String",
+						"defaultValue": "adf-linked-uat"
 					}
 				},
 				"annotations": [],
@@ -183,7 +191,10 @@
 							"referenceName": "AzureKeyVault1",
 							"type": "LinkedServiceReference"
 						},
-						"secretName": "adf-linked-uat"
+						"secretName": {
+							"value": "@linkedService().uat_secret",
+							"type": "Expression"
+						}
 					}
 				}
 			},
